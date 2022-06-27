@@ -46,7 +46,7 @@ echo jake:{ENTERPASSWORD} | chpasswd
 
 
 ###{System Applications}###
-pacman -S base-devel dialog mtools xdg-user-dirs xdg-utils cifs-utils gvfs udisks2 gvfs-smb bind cups cups-pdf hplip rsync openssh ssh-audit zsh zsh-completions firefox neofetch htop cmatrix figlet cowsay alacritty btop onefetch cronie wireshark-qt font-manager 
+pacman -S base-devel pacman-contrib dialog mtools xdg-user-dirs xdg-utils cifs-utils gvfs udisks2 gvfs-smb bind cups cups-pdf hplip rsync openssh ssh-audit zsh zsh-completions firefox neofetch htop cmatrix figlet cowsay alacritty btop onefetch cronie wireshark-qt font-manager 
 
 systemctl enable cups.socket		# Printing
 systemctl enable reflector.timer	# Pacman Mirror Sorting (Edit /etc/reflector/reflector.conf with desired settings)
@@ -77,7 +77,7 @@ usermod -aG wireshark jake
 
 
 ###{Gaming}###
-#pacman -S steam lutris discord
+#pacman -S steam lutris discord retroarch retroarch-assets-xmb retroarch-assets-ozone retroarch-assets-glui 
 
 #####NOTE##### Install proton-ge-custom-bin & mangohud+goverlay from the AUR, Steam requires microsoft fonts to work correctly
 
@@ -88,7 +88,7 @@ usermod -aG wireshark jake
 #+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+Virtualization+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+#
 
 ##{QEMU/Libvirt/KVM}##
-#pacman -S virt-manager qemu-full qemu-emulators-full dmidecode edk2-ovmf iptables-nft dnsmasq openbsd-netcat bridge-utils vde2 libvirt swtpm
+#pacman -S virt-manager qemu-full qemu-emulators-full dmidecode edk2-ovmf iptables-nft dnsmasq openbsd-netcat bridge-utils vde2 libvirt swtpm qemu-audio-alsa qemu-audio-dbus qemu-audio-jack qemu-audio-oss qemu-audio-pa qemu-audio-sdl qemu-audio-spice qemu-block-curl qemu-block-dmg qemu-block-gluster qemu-block-iscsi qemu-block-nfs qemu-block-rbd qemu-block-ssh qemu-chardev-baum qemu-chardev-spice qemu-docs qemu-hw-display-qxl qemu-hw-display-virtio-gpu qemu-hw-display-virtio-gpu-gl qemu-hw-display-virtio-gpu-pci qemu-hw-display-virtio-gpu-pci-gl qemu-hw-display-virtio-vga qemu-hw-display-virtio-vga-gl qemu-hw-s390x-virtio-gpu-ccw qemu-hw-usb-host qemu-hw-usb-redirect qemu-hw-usb-redirect qemu-hw-usb-smartcard qemu-img qemu-pr-helper qemu-system-aarch64 qemu-system-alpha qemu-system-arm qemu-system-avr qemu-system-cris qemu-system-hppa qemu-system-m68k qemu-system-microblaze qemu-system-mips qemu-system-nios2 qemu-system-or1k qemu-system-ppc qemu-system-riscv qemu-system-rx qemu-system-s390x qemu-system-sh4 qemu-system-sparc qemu-system-tricore qemu-system-x86 qemu-system-xtensa qemu-tests qemu-tools qemu-ui-curses qemu-ui-dbus qemu-ui-egl-headless qemu-ui-gtk qemu-ui-opengl qemu-ui-sdl qemu-ui-spice-app qemu-ui-spice-core qemu-user qemu-vhost-user-gpu qemu-virtiofsd 
 #systemctl enable libvirtd.service
 #usermod -aG libvirt jake
 
@@ -120,9 +120,11 @@ usermod -aG wireshark jake
 
 #+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+Laptop Power+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+#
 
-#pacman -S acpid tlp
+#pacman -S acpid tlp acpilight
 #systemctl enable tlp.service
 #systemctl enable acpid.service
+#usermod -aG video jake
+## Note (read gitlab page for further instructions)
 
 
 echo "jake ALL=(ALL) ALL" >> /etc/sudoers.d/jake
