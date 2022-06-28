@@ -140,7 +140,7 @@ arch-chroot /mnt
 ```bash
 # Add the encrypt and lvm2 hook to the mkinitcpio.conf
 
-HOOKS=(base udev autodetect keyboard keymap consolefont modconf block encrypt lvm2 filesystems fsck)
+HOOKS=(base udev autodetect keyboard keymap consolefont modconf block mdadm_udev encrypt lvm2 filesystems fsck)
 ```
 ### **bootloader**
 ```bash
