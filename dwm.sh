@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ##{dwm}##
-#pacman -S xorg-server xorg-xinit nitrogen picom qt5ct lxappearance gnome-themes-extra dunst gnome-keyring libsecret seahorse blueman ttf-joypixels
+#pacman -S xorg-server xorg-xinit nitrogen picom qt5ct lxappearance gnome-themes-extra dunst gnome-keyring libsecret seahorse blueman ttf-joypixels xorg-xsetroot
 #####NOTE#####  libxft-bgra can be installed from the AUR for emoji support, 
 
 
