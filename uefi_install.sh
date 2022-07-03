@@ -81,6 +81,9 @@ usermod -aG wireshark jake
 
 #####NOTE##### Install proton-ge-custom-bin & mangohud+goverlay from the AUR, Steam requires microsoft fonts to work correctly
 
+###{Wine}###
+#pacman -S wine-staging wine-gecko wine-mono pipewire-pulse lib32-libpulse lib32-alsa-oss lib32-gnutls lib32-gst-plugins-base lib32-gst-plugins-good samba winetricks zenity
+
 
 ###{MultiMedia}###
 #pacman -S mpd mpc mpv ncmpcpp
