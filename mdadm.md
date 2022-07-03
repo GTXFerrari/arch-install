@@ -24,9 +24,9 @@ gdisk /dev/nvme0n1
 
 * Create the first partition on the device for the EFI directory **(n)** **(+512M in last sector)** Use code **(ef00)** for EFI 
 
-*  Create an 8GB Swap partition **(n)** **(+8G in the last sector)** **(use code 8200)** for Linux swap
+*  Create an 8GB Swap partition **(n)** **(+8G in the last sector)** Use code **(8200)** for Linux swap
 
-* Use the rest of the space for data **(n)** **(Press enter to use all available space)** **(Use code fd00)** for Linux RAID
+* Use the rest of the space for data **(n)** **(Press enter to use all available space)** Use code **( fd00)** for Linux RAID
 
 * Write the partitions to the disk **(w)**
  
