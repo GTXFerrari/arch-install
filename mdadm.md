@@ -98,7 +98,7 @@ vgcreate vg1 /dev/mapper/cryptlvm
 
 # Create the logical volumes (Use lvs to show the created LV's)
 
-lvcreate -L 50 vg1 -n root
+lvcreate -L 50G vg1 -n root
 lvcreate -l 100%FREE vg1 -n home
 ```
 ### **Format the filesystems on each LV**
