@@ -7,7 +7,7 @@
 ---
 &nbsp;  
 
-![RAID0](https://networkencyclopedia.com/wp-content/uploads/2019/08/raid-0-disk-striping-1024x951.jpg)
+<img src="https://networkencyclopedia.com/wp-content/uploads/2019/08/raid-0-disk-striping-1024x951.jpg" width="300" height="300">
 
 **Further instructions can be found at [Arch Wiki RAID](https://wiki.archlinux.org/title/RAID#Installation)**
 
