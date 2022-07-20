@@ -1,6 +1,5 @@
 # **MDADM+LUKS+LVM (RAID 0)**
 
-<!-- >> I have recently gotten my hands on 2 Samsung 980 pro SSD's 2TB. My goal here is maximum speed and iops. I send daily backups to my NAS and an offsite location, so data integrity is not of the utmost importance. This guide will be a general guideline for how to achieve a RAID 0 array using mdadm on arch linux
 &nbsp;
 
 <!--### **Create a RAID 0 array from 2 NVME drives** -->
