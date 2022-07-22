@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ##{KDE_Plasma}##
-#pacman -S xorg plasma kde-applications plasma-nm
+#pacman -S xorg plasma kde-applications plasma-nm packagekit-qt5
 #####NOTE##### Add plasma-nm to kde taskbar via Panel options > Add Widgets > Networks menu,
 
 

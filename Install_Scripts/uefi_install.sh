@@ -16,6 +16,7 @@ echo "127.0.1.1 arch.localdomain arch" >> /etc/hosts
 echo root:{ENTERPASSWORD} | chpasswd
 useradd -m jake
 echo jake:{ENTERPASSWORD} | chpasswd
+pacman -S archlinux-keyring
 
 #+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+System_Applications+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+#
 
